@@ -1,0 +1,99 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="style/trangchu.css">
+<link rel="stylesheet" type="text/css" href="style/cssmenudoc.css">
+
+
+
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="outer">
+	<header id="banner">
+        <div class="neoslideshow">    
+          <img src="images/banner/banner1.jpg" width="100%" height="200px" />        
+          <img src="images/banner/banner2.jpg" width="100%" height="200px" />        
+          <img src="images/banner/banner3.jpg" width="100%" height="200px" />        
+          <img src="images/banner/banner4.jpg" width="100%" height="200px" />        
+        </div>
+        <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
+		<script>
+		$(function() {
+    	$('.neoslideshow img:gt(0)').hide();
+    	setInterval(function(){
+      	$('.neoslideshow :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.neoslideshow');},
+      	3000);
+		})		
+		</script>
+    </header>
+   
+   <nav>
+   		<ul>
+        	<li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+            <li><a href="sanpham.html">SẢN PHẨM</a></li>
+            <li><a href="tintuc-sukien.html">TIN TỨC-SỰ KIỆN</a></li>
+            <li><a href="lienhe.html">LIÊN HỆ</a></li>
+   	 </ul>
+   </nav>
+   <!-- InstanceBeginEditable name="content" -->
+	<div id="content">
+    <h2 style="color:#F00;">Liên hệ với chúng tôi</h2>
+    <p>Trang chủ > Liên hệ</p>
+    <p>Quý khách có thể liên hệ với chúng tôi bằng cách điền thông tin vào mẫu trên. Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất.</p>
+    <form>
+    <fieldset>
+    <legend>Thông tin</legend>
+    	<div id="khunglienhe">
+       	  <div class="lienhe">
+            <p>Họ tên:</p>
+            <input type="text"  required class="gott" placeholder="Vui lòng gõ họ tên của bạn">
+            <p>Địa chỉ:</p>
+            <input type="text" class="gott" required>
+            <p>Email:</p>
+            <input type="email" class="gott" required pattern="[^@]+@gmail+\.com" placeholder="Chỉ nhận email của google">
+            
+            </div>
+          <div class="lienhe">
+            	<p>Điện thoại:</p>
+                <input type="text"  required  class="gott" pattern="[0-9]{10,11}" placeholder="Số điện thoại có 10 hoặc 11 chữ số">
+                <p>Fax:</p>
+                <input type="text" class="gott">
+                <p>Bạn muốn chúng tôi trả lời qua:</p><br>
+                <input type="radio" name="congcu" value="male">Email
+				<input type="radio" name="congcu" value="female">Điện thoại
+            </div>
+          <p>Nội dung:</p>
+            <textarea name="noidung" cols="" rows="8" class="goykien"></textarea><br>
+            <input type="submit" value="Gửi">
+        </div>
+    </fieldset>
+    </form>
+    </div>
+	
+
+<!-- InstanceEndEditable -->
+   <footer>
+  		<div id="menu">
+        	<ul>
+            	<li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="tintuc-sukien.html">Tin tức-Sự kiện</a></li>
+                <li style="border-right:none;"><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+  </footer>
+</div>
+</body>
+<!-- InstanceEnd --></html>
